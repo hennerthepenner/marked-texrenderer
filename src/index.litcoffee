@@ -81,7 +81,7 @@ an environment.
           @options.minted.firstnumber += lines.length
 
         """
-        \\begin{#{@options.packageName}}#{#{@options.packageOptions}}
+        \\begin{#{@options.packageName}}#{@options.packageOptions}
         #{highlighted}
         \\end{#{@options.packageName}}\n\n"""
 

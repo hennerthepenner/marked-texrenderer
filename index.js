@@ -74,7 +74,7 @@
         lines = code.split(/\r\n|\r|\n/);
         this.options.minted.firstnumber += lines.length;
       }
-      return "\\begin{" + this.options.packageName + "}" + "\n" + highlighted + "\n\\end{" + this.options.packageName + "}\n\n";
+      return "\\begin{" + this.options.packageName + "}" + this.options.packageOptions + "\n" + highlighted + "\n\\end{" + this.options.packageName + "}\n\n";
     };
 
     TexRenderer.prototype.defaultHighlighting = function(code, language) {
