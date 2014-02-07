@@ -1,0 +1,27 @@
+{
+  "name": "marked-texrenderer",
+  "version": "0.0.0",
+  "description": "TeX renderer for marked",
+  "main": "index.js",
+  "scripts": {
+  },
+  "dependencies": {
+    "marked": "0.3.x"
+  },
+  "devDependencies": {
+    "mocha": "1.17.x",
+    "should": "3.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hennerthepenner/marked-texrenderer.git"
+  },
+  "author": "Hendrik Sander <hendrik.sander@googlemail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hennerthepenner/marked-texrenderer/issues"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test node node_modules/mocha/bin/mocha -R spec"
+  }
+}
