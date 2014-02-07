@@ -56,7 +56,7 @@ br        | line break                | line break
 del       | `~~`                      | *unsupported*
 link      | `(linkname)[href]`        | `\\url{href}`
 image     | `![Alt](href)`            | *unsupported*
-code      | intent 4 spaces or `````  | **to be described**
+code      | intent 4 spaces or three backticks  | **to be described**
 paragraph | blank line                | blank line
 html      | HTML code                 | *unsupported*
 heading   | `#`, `##`, etc.           | `\\section{}`, `\\subsection{}`, `\\subsubsection{}`, `\\paragraph{}`, `\\subparagraph{}`
