@@ -52,7 +52,7 @@ Code blocks
 
 By default the renderer creates a [listing](http://www.ctan.org/pkg/listing) 
 environment for code blocks and adds syntax highlighting with 
-(minted)[http://www.ctan.org/pkg/minted]. Example:
+[minted](http://www.ctan.org/pkg/minted). Example:
 
 ```tex
 \begin{listing}
@@ -60,6 +60,16 @@ environment for code blocks and adds syntax highlighting with
 console.log("bla");
 \end{minted}
 \end{listing}
+```
+
+Unfortunately the renderer can't guess the programming language used in a code 
+block. You can either use specify a `defaultLanguage` in the options (see next 
+section) or use github flavored markdown like so:
+
+```
+```javascript
+console.log("bla");
+```
 ```
 
 
@@ -71,7 +81,7 @@ a few more for customizing the code block output:
 
 __`packageName`__ (`String`): Name of the package to be used for the 
 environment for code blocks. Examples are `verbatim` (this is what 
-(pandoc)[http://johnmacfarlane.net/pandoc/] uses), `lstlisting`, `listing`. 
+[pandoc](http://johnmacfarlane.net/pandoc/) uses), `lstlisting`, `listing`. 
 Defaults to `listing`.
 
 __`packageOptions`__ (`String`): Options to be passed to the environment for 
@@ -83,3 +93,6 @@ code, usually the line numbers start over beginning with 1. Defaults to `true`.
 
 __`minted`__ (`Object`): Hash of options to be passed to minted. Defaults to 
 `{linenos: true, bgcolor: "codebg", firstnumber: 1}`.
+
+__`defaultLanguage`__ (`String`): Programming language used in code blocks. 
+Defaults to `text`.
