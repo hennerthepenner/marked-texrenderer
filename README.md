@@ -63,7 +63,7 @@ console.log("bla");
 ```
 
 Unfortunately the renderer can't guess the programming language used in a code 
-block. You can either use specify a `defaultLanguage` in the options (see next 
+block. You can either specify a `defaultLanguage` in the options (see next 
 section) or use github flavored markdown like so:
 
 ```
