@@ -13,12 +13,14 @@ Usage
 Please refer to the [documentation of marked](https://github.com/chjj/marked) 
 for more information about the usage and options.
 
-    var marked = require("marked");
-    var TexRenderer = require("marked-texrenderer");
+```javascript
+var marked = require("marked");
+var TexRenderer = require("marked-texrenderer");
 
-    var options = {renderer: new TexRenderer()};
-    console.log(marked("I am using __markdown__.", options));
-    // Outputs: I am using \textbf{markdown}.
+var options = {renderer: new TexRenderer()};
+console.log(marked("I am using __markdown__.", options));
+// Outputs: I am using \textbf{markdown}.
+```
 
 
 Options
