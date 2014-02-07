@@ -70,7 +70,6 @@ section) or use github flavored markdown like so:
 ```javascript
 console.log("bla");
 ```
-```
 
 
 Options
