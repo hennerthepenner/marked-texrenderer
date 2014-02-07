@@ -47,14 +47,14 @@ __`minted`__ (`Object`): Hash of options to be passed to minted. Defaults to
 How is my stuff rendered?
 -------------------------
 
-marked    | markdown                  | marked-texrenderer
+marked renderer function | markdown                  | marked-texrenderer
 ----------|---------------------------|--------------------
 em        | `*`, `_`                  | `\\textit{}`
 strong    | `**`, `__`                | `\\textbf{}`
 codespan  | ````                      | `\\texttt{}`
 br        | line break                | line break
 del       | `~~`                      | *unsupported*
-link      | `(linkname)[href]`        | *unsupported*
+link      | `(linkname)[href]`        | `\\url{href}`
 image     | `![Alt](href)`            | *unsupported*
 code      | intent 4 spaces or `````  | **to be described**
 paragraph | blank line                | blank line
